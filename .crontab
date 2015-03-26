@@ -1,0 +1,5 @@
+SHELL=/bin/bash
+PATH=/usr/local/bin:/usr/local/sbin:/sbin:/usr/sbin:/bin:/usr/bin:/usr/bin/X11
+# each sunday at 00:05
+5 0 * * 0 cd /srv/data/confluence/ && fab backup > /dev/null
+# -----------------------------------------------------------------------------
